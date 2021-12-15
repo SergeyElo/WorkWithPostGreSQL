@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b225e1c7-96ef-45aa-b0a6-16e0e30bb20d": {
+      "ProjectGuid": "b225e1c7-96ef-45aa-b0a6-16e0e30bb20d",
+      "DisplayName": "PrimChat",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+@model PrimChat.Models.User
+<h2>Пользователь № @Model.id</h2>
+@using (Html.BeginForm("EditUser", "Home", FormMethod.Post))
+{
+<fieldset>
+    @Html.HiddenFor(m => m.id)
+    <p>
+        @Html.LabelFor(m => m.mat, "Пользователь")
+        <br />
+        @Html.EditorFor(m => m.mat)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.login, "Логин")
+        <br />
+        @Html.EditorFor(m => m.login)
+
+    </p>
+    <p>
+        @Html.LabelFor(m => m.password, "Пароль")
+        <br />
+        @Html.EditorFor(m => m.password)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.email, "E-mail")
+        <br />
+        @Html.EditorFor(m => m.email)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.phone, "Телефон")
+        <br />
+        @Html.EditorFor(m => m.phone)
+    </p>
+    <p><input type="submit" value="Сохранить" /></p>
+    <a href="/Home/index">Назад</a>
+</fieldset>
+}

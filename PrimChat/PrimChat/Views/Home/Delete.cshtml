@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+@model PrimChat.Models.User
+<h2>Удаление пользователя № @Model.id</h2>
+@using (Html.BeginForm("Delete", "Home", FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.id)
+        <p>
+            @Html.LabelFor(m => m.mat, "Пользователь: ")            
+            @Html.Display("mat")
+        </p>
+        <p>
+            @Html.LabelFor(m => m.login, "Логин: ")
+            @Html.Display("login")
+
+        </p>
+        <p>
+            @Html.LabelFor(m => m.password, "Пароль: ")
+            @Html.Display("password")
+        </p>
+        <p>
+            @Html.LabelFor(m => m.email, "E-mail: ")
+            @Html.Display("email")
+        </p>
+        <p>
+            @Html.LabelFor(m => m.phone, "Телефон: ")
+            @Html.Display("phone")
+        </p>
+        <p><input type="submit" value="Удалить" /></p>
+        <a href="/Home/index">Назад</a>
+    </fieldset>
+}

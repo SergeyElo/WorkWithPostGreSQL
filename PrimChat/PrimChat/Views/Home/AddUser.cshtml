@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddUser</title>
+</head>
+<body>
+    <div>
+        <h3>Добавление пользователя</h3>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.id" name="id" />
+            <table>
+                <tr>
+                    <td><p>ФИО: </p></td>
+                    <td><input type="text" name="mat" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Логин:</p></td>
+                    <td>
+                        <input type="text" name="login" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Пароль:</p></td>
+                    <td>
+                        <input type="text" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>e-mail:</p></td>
+                    <td>
+                        <input type="text" name="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Телефон:</p></td>
+                    <td>
+                        <input type="text" name="phone" />
+                    </td>
+                </tr>
+                <tr><td><input type="submit" value="Добавить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+    <p><a href="/Home/index">Назад</a></p>    
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Пользователи</title>
+</head>
+<body>
+    <div>
+        <h3>Список:</h3>
+        <table>
+            <tr>                
+                <td><p>ФИО</p></td>
+                <td><p>Логин</p></td>
+                <td><p>e-mail</p></td>
+                <td><p>Телефон</p></td>
+                <td></td>
+            </tr>
+            @foreach (var usr in ViewBag.Users)
+            {
+        <tr>
+            <td><p>@usr.mat</p></td>
+            <td><p>@usr.login</p></td>
+            <td><p>@usr.email</p></td>
+            <td><p>@usr.phone</p></td>
+            <td><p><a href="/Home/Delete/@usr.id"> &nbsp; &nbsp; &nbsp; Удалить</a></p></td>
+            <td><p><a href="/Home/EditUser/@usr.id"> &nbsp; &nbsp; &nbsp; Редактировать</a></p></td>
+        </tr>
+            }
+        </table>
+    </div>
+    <p><a href="/Home/AddUser/1">Добавить</a></p>
+</body>
+</html>
