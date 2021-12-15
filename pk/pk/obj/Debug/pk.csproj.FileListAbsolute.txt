@@ -1,0 +1,8 @@
+C:\Users\elo\source\repos\pk\pk\obj\Debug\pk.csproj.AssemblyReference.cache
+C:\Users\elo\source\repos\pk\pk\obj\Debug\pk.csproj.SuggestedBindingRedirects.cache
+C:\Users\elo\source\repos\pk\pk\obj\Debug\pk.csproj.CoreCompileInputs.cache
+C:\Users\elo\source\repos\pk\pk\bin\Debug\pk.exe.config
+C:\Users\elo\source\repos\pk\pk\bin\Debug\pk.exe
+C:\Users\elo\source\repos\pk\pk\bin\Debug\pk.pdb
+C:\Users\elo\source\repos\pk\pk\obj\Debug\pk.exe
+C:\Users\elo\source\repos\pk\pk\obj\Debug\pk.pdb
